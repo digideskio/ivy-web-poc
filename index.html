@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+
+    <link rel="import" href="bower_components/paper-styles/typography.html">
+    <link rel="import" href="bower_components/app-layout/app-layout.html">
+    <link rel="import" href="bower_components/app-layout/app-header-layout/app-header-layout.html">
+    <link rel="import" href="bower_components/app-layout/app-scroll-effects/app-scroll-effects.html">
+
+    <link rel="import" href="bower_components/paper-styles/color.html">
+    <link rel="import" href="bower_components/paper-tabs/paper-tabs.html">
+    <link rel="import" href="bower_components/paper-tabs/paper-tab.html">
+    <link rel="import" href="bower_components/paper-material/paper-material.html">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <style is="custom-style">
+        body {
+            margin: 0;
+            font-family: 'Roboto', 'Noto', sans-serif;
+            background-color: #eee;
+        }
+        
+        app-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            color: #fff;
+            background-color: #212121;
+            z-index: 10;
+        }
+        
+        app-header app-toolbar {
+            height: 92px;
+        }
+        
+        app-header [title] {
+            margin-left: 15px;
+            font-size: 42px;
+            line-height: 65px;
+            font-weight: 300;
+        }
+        
+        app-header [condensed-title] {
+            margin-left: 20px;
+            font-weight: 300;
+        }
+        
+        app-header paper-tabs {
+            position: relative;
+            left: -20px;
+            --paper-tabs-selection-bar-color: #00C853;
+            --paper-tabs-selection-bar: {
+                height: 3px;
+            }
+        }
+        
+        paper-tab {
+            --paper-tab-ink: #00E676;
+            --paper-tab: {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body unresolved>
+    <app-header effects="waterfall" condenses fixed>
+        <app-toolbar class="bottom">
+            <div title>
+                <img src="images/ivy-logo.png" class="header-logo" />
+                <span>Ivy</span>
+            </div>
+        </app-toolbar>
+        <paper-tabs selected="0" primary scrollable>
+            <paper-tab>DASHBOARD</paper-tab>
+            <paper-tab>SHARES</paper-tab>
+            <paper-tab>DOCKER</paper-tab>
+        </paper-tabs>
+    </app-header>
+    <div class="content">
+        <paper-material elevation="1">
+            <section>
+                <h1>Dashboard</h1>
+            </section>
+        </paper-material>
+        <paper-material elevation="1">
+            <section>
+                <h1>Dashboard</h1>
+            </section>
+        </paper-material>
+        <paper-material elevation="1">
+            <section>
+                <h1>Dashboard</h1>
+            </section>
+        </paper-material>
+        <paper-material elevation="1">
+            <section>
+                <h1>Dashboard</h1>
+            </section>
+        </paper-material>
+        <paper-material elevation="1">
+            <section>
+                <h1>Dashboard</h1>
+            </section>
+        </paper-material>
+    </div>
+</body>
+
+</html>

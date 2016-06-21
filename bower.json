@@ -1,0 +1,17 @@
+{
+  "name": "ivy-web-poc",
+  "homepage": "https://github.com/Magics-Group/ivy-web-poc",
+  "authors": [
+    "Luigi Poole <luigipoole@outlook.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "app-layout": "PolymerElements/app-layout#^0.9.1",
+    "paper-material": "PolymerElements/paper-material#^1.0.6",
+    "paper-tabs": "PolymerElements/paper-tabs#^1.6.2",
+    "paper-styles": "PolymerElements/paper-styles#^1.1.4"
+  }
+}
