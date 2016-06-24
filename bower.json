@@ -15,5 +15,8 @@
     "paper-styles": "PolymerElements/paper-styles#^1.1.4",
     "paper-datatable": "^0.9.8",
     "paper-card": "PolymerElements/paper-card#^1.1.1"
+  },
+  "resolutions": {
+    "paper-styles": "^1.1.4"
   }
 }
