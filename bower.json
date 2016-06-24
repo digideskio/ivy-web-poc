@@ -12,6 +12,8 @@
     "app-layout": "PolymerElements/app-layout#^0.9.1",
     "paper-material": "PolymerElements/paper-material#^1.0.6",
     "paper-tabs": "PolymerElements/paper-tabs#^1.6.2",
-    "paper-styles": "PolymerElements/paper-styles#^1.1.4"
+    "paper-styles": "PolymerElements/paper-styles#^1.1.4",
+    "paper-datatable": "^0.9.8",
+    "paper-card": "PolymerElements/paper-card#^1.1.1"
   }
 }

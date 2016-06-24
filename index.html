@@ -18,6 +18,7 @@
     <link rel="import" href="bower_components/paper-tabs/paper-tabs.html">
     <link rel="import" href="bower_components/paper-tabs/paper-tab.html">
     <link rel="import" href="bower_components/paper-material/paper-material.html">
+    <link rel="import" href="bower_components/paper-datatable/paper-datatable.html">
     <link rel="stylesheet" href="css/styles.css">
 
     <style is="custom-style">
@@ -89,29 +90,31 @@
     <div class="content">
         <paper-material elevation="1">
             <section>
-                <h1>Dashboard</h1>
+                <paper-datatable id="datatable" selectable multi-selection>
+                    <paper-datatable-column id="nameColumn" header="Name" property="name" capitalize="[[capitalize]]" style="min-width: 200px;" sortable>
+                        <template>
+                            <div>
+                                <img src="[[item.picture.thumbnail]]" style="width:32px;height:32px;border-radius:16px;vertical-align: middle;margin-right:4px;">
+                                <span style="vertical-align:middle;">[[capitalize(value.title)]]</span>
+                                <span style="vertical-align:middle;">[[capitalize(value.first)]]</span>
+                                <span style="vertical-align:middle;">[[capitalize(value.last)]]</span>
+                            </div>
+                        </template>
+                    </paper-datatable-column>
+                    <paper-datatable-column header="E-mail" property="email" style="min-width: 200px;" sortable></paper-datatable-column>
+                    <paper-datatable-column header="SSN" property="SSN" style="min-width: 130px;" sortable></paper-datatable-column>
+                    <paper-datatable-column header="Phone" property="phone" style="min-width: 150px;" sortable></paper-datatable-column>
+                    <paper-datatable-column header="Cell" property="cell" style="min-width: 150px;" sortable></paper-datatable-column>
+                    <paper-datatable-column header="Address" property="location" capitalize="[[capitalize]]" style="min-width: 200px;" sortable>
+                        <template>
+                            <div>[[capitalize(value.street)]]</div>
+                            <div><span>[[capitalize(value.state)]]</span> <span>[[capitalize(value.zip)]]</span></div>
+                        </template>
+                    </paper-datatable-column>
+                </paper-datatable>
             </section>
         </paper-material>
-        <paper-material elevation="1">
-            <section>
-                <h1>Dashboard</h1>
-            </section>
-        </paper-material>
-        <paper-material elevation="1">
-            <section>
-                <h1>Dashboard</h1>
-            </section>
-        </paper-material>
-        <paper-material elevation="1">
-            <section>
-                <h1>Dashboard</h1>
-            </section>
-        </paper-material>
-        <paper-material elevation="1">
-            <section>
-                <h1>Dashboard</h1>
-            </section>
-        </paper-material>
+
     </div>
 </body>
 
